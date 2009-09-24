@@ -1,0 +1,9 @@
+ORIG_PN="kio-ftps"
+inherit kde4
+
+DESCRIPTION="KDE FTPS I/O plugin"
+HOMEPAGE="http://kasablanca.berlios.de/kio-ftps/"
+SRC_URI="mirror://berlios/kasablanca/${ORIG_PN}-${PV}.tar.gz"
+SRC_DIR=${ORIG_PN}
+
+PATCH_URI="0.2-no-undefined.patch"

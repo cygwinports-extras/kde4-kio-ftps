@@ -1,0 +1,11 @@
+--- origsrc/kio-ftps/CMakeLists.txt	2008-02-17 16:03:38.000000000 -0600
++++ src/kio-ftps/CMakeLists.txt	2009-09-24 02:31:11.465678700 -0500
+@@ -8,7 +8,7 @@ set(mySources ftp.cpp)
+ 
+ kde4_add_plugin( kio_ftps ${mySources} )
+ 
+-target_link_libraries(kio_ftps ${KDE4_KDECORE_LIBS} kio )
++target_link_libraries(kio_ftps ${KDE4_KDECORE_LIBS} kio ${QT_QTNETWORK_LIBRARY} )
+ 
+ install(TARGETS kio_ftps  DESTINATION ${PLUGIN_INSTALL_DIR} )
+ install( FILES ftps.protocol  DESTINATION  ${SERVICES_INSTALL_DIR} )
